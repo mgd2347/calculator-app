@@ -1,3 +1,9 @@
+# calculator-app
+
+This is a simple calculator app.
+
+This app was started using the Create React App.
+Then I started creating the components I already knew I was going to have, like the calculator itself, and inside it, the screen and the keypad with the buttons and doing the layout.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

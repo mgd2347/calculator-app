@@ -1,9 +1,9 @@
 .Calculator {
   align-items: center;
-  background-color: #eaebed;
-  border: 1px solid #c9cacc;
-  border-radius: 5px;
+  background-color: #99e2e1;
+  border: 1px solid #1d7c7b;
+  border-radius: 15px;
   margin: auto;
-  max-width: 50%;
+  max-width: 400px;
   padding: 20px;
 }

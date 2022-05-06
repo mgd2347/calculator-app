@@ -1,11 +1,14 @@
 .Screen {
   align-items: center;
-  background-color: #fff;
-  border: 1px solid #c9cacc;
-  border-radius: 5px;
+  background-color: #d6fffe;
+  border: 1px solid #1d7c7b;
+  border-radius: 15px;
+  color: #1d7c7b;
   display: block;
+  font-family: 'Play', sans-serif;
+  font-size: 42px;
   margin: 10px auto;
   max-width: 90%;
-  padding: 20px;
+  padding: 5px 10px;
   text-align: right;
 }

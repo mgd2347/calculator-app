@@ -1,0 +1,21 @@
+button {
+  background: #1d7c7b;
+  border: 0.5px solid #1d7c7b;
+  border-radius: 23px;
+  color: #d6fffe;
+  font-family: 'Play', sans-serif;
+  font-size: 30px;
+  margin: 10px 7px;
+  padding: 13px 20px;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  background-color:#d6fffe;
+  color: #1d7c7b;
+  cursor: pointer;
+}
+
+.Button {
+  display: inline;  
+}

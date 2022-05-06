@@ -1,5 +1,8 @@
 .Footer {
-  margin-bottom: 10px;
+  color: #1d7c7b;
+  font-family: 'Play', sans-serif;
+  display: block;
+  margin: 20px auto;
 }
 
 .Footer-link {

@@ -2,14 +2,14 @@ import Calculator from "./Calculator";
 import Footer from "./Footer";
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>Calculator</h1>
+      <div className="App-header">
+        <h1>Calculator</h1>
+      </div>
       <Calculator />
       <Footer />
     </div>
   );
 }
-
-export default App;
