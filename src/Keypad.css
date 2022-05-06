@@ -1,0 +1,9 @@
+.Keypad {
+  align-items: center;
+  background-color: #eaebed;
+  border: 1px solid #c9cacc;
+  border-radius: 5px;
+  margin: 10px auto;
+  max-width: 80%;
+  padding: 20px;
+}

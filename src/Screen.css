@@ -1,0 +1,11 @@
+.Screen {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #c9cacc;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  max-width: 90%;
+  padding: 20px;
+  text-align: right;
+}
