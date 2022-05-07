@@ -7,6 +7,7 @@ Then I start by creating the components I already know I am going to have, like 
 After the layout, I want to make the buttons work with click events, so I write their functions.
 Beacuse these functions receive events from the buttons, I will have the Buttons inside the Keypad on the Calculator component instead of in the separate Keypad component.
 After the buttons are working, I connect them to the respective functions and update the num, sign and result variables by setting the State at the end of each funtion.
+I used the Textfit library to make the numbers shrink and fit the Screen and not be displayed outside it. 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

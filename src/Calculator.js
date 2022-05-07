@@ -16,20 +16,24 @@ export default function Calculator() {
     [7, 8, 9, "-"],
     [4, 5, 6, "+"],
     [1, 2, 3, "."],
-    [0, "="]
+    [0, "", "", "="]
   ];
 
   function clear() {
+    /* This function sets the variables to default and clears
+    both screen. */
     setCalc({
       ...calc,
       sign: "",
       num: 0,
       result: 0
     });
-    console.log(calc)
   }
 
   function handleNum(event) {
+    /* This function reads the numbers input via button and adds
+    them to the num variable. When there is a sign it moves the 
+    num to the result. */
     event.preventDefault();
     const value = event.target.innerHTML;
 
@@ -43,10 +47,10 @@ export default function Calculator() {
             : calc.num + value,
       result: !calc.sign ? 0 : calc.result
     });
-    console.log(calc)
   }
 
   function invert() {
+    /* This function inverts the numbers. */
     setCalc({
       ...calc,
       num:
@@ -55,10 +59,11 @@ export default function Calculator() {
         calc.num ? calc.num * -1 : 0,
       sign: ""
     })
-    console.log(calc)
   }
 
   function handleOp(event) {
+    /* This function passes the value of num to the
+    result, so that another number can be read. */
     event.preventDefault();
     const value = event.target.innerHTML;
 
@@ -69,10 +74,11 @@ export default function Calculator() {
         !calc.result && calc.num ? calc.num : calc.result,
       num: 0
     });
-    console.log(calc)
   }
 
   function handleEquals() {
+    /* This function defines the arithmetic operations and does
+    them to calculate the result. */
     if (calc.sign && calc.num) {
       function calculate(a, b, sign) {
         let op = 0;
@@ -84,7 +90,6 @@ export default function Calculator() {
             : sign === "x"
               ? op = a * b
               : op = a / b;
-        console.log(op);
         return op;
       }
     
@@ -92,16 +97,17 @@ export default function Calculator() {
         ...calc,
         result:
           calc.num === "0" && calc.sign === "÷"
-            ? "Can't do division with 0"
+            ? "Can't divide by 0"
             : calculate(Number(calc.result), Number(calc.num), calc.sign),
         sign: "",
         num: 0
       });
     }
-    console.log(calc)
   }
 
   function handleFloat(event) {
+    /* This function turns integers into floats by adding the
+    '.' symbol to the numbers. */
     event.preventDefault();
     const value = event.target.innerHTML;
 
@@ -110,7 +116,6 @@ export default function Calculator() {
       num:
         !calc.num.toString().includes(".") ? calc.num + value : calc.num
     });
-    console.log(calc)
   }
 
   return (
@@ -122,7 +127,13 @@ export default function Calculator() {
             return (
               <Button
                 key={i}
-                className={btn === "=" ? "equals" : ""}
+                className={
+                  btn === "="
+                    ? "equals"
+                    : btn === ""
+                      ? "invisible"
+                      : ""
+                }
                 value={btn}
                 onClick={
                   btn === "C"

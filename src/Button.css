@@ -9,6 +9,7 @@ button {
   outline: none;
   padding: 13px 20px;
   transition: all 200ms ease-in-out;
+  width: 100%;
 }
 
 button:hover {
@@ -27,4 +28,14 @@ button:hover {
   background-color:#1d7c7b;
   color: #d6fffe;
   cursor: pointer;
+}
+
+.invisible {
+  background-color: #99e2e1;
+  cursor: default;
+}
+
+.invisible:hover {
+  background-color: #99e2e1;
+  cursor: default;
 }
