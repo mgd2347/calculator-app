@@ -13,7 +13,6 @@ export default function Footer() {
         Open-source code
       </a>
       <span> by Margarida Fialho</span>
-      
     </small>
   );
 }

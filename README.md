@@ -1,9 +1,12 @@
 # calculator-app
 
-This is a simple calculator app.
+This is a simple web calculator app.
 
 This app was started using the Create React App.
-Then I started creating the components I already knew I was going to have, like the calculator itself, and inside it, the screen and the keypad with the buttons and doing the layout.
+Then I start by creating the components I already know I am going to have, like the calculator wrapper itself, and inside it, the screen and the keypad with the buttons and doing the layout.
+After the layout, I want to make the buttons work with click events, so I write their functions.
+Beacuse these functions receive events from the buttons, I will have the Buttons inside the Keypad on the Calculator component instead of in the separate Keypad component.
+After the buttons are working, I connect them to the respective functions and update the num, sign and result variables by setting the State at the end of each funtion.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -3,7 +3,30 @@
   background-color: #99e2e1;
   border: 1px solid #1d7c7b;
   border-radius: 15px;
+  height: 500px;
   margin: auto;
-  max-width: 400px;
-  padding: 20px;
+  width: 350px;
+  padding: 15px;
+}
+
+.keypad {
+  background-color: #99e2e1;
+  border: 1px solid #99e2e1;
+  border-radius: 15px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: calc(100% - 100px);
+  margin: 15px auto 5px;
+  max-width: 90%;
+  padding: 10px auto 0px;
+}
+
+.nums {
+  align-items: center;
+}
+
+.bottom-row {
+  align-items: center;
 }
